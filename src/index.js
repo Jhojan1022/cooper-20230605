@@ -62,5 +62,5 @@ app.all("/cerrarActividades", actividadesController.cerrarActividades)
 
 const server = app.listen(process.env.port, () => {
     server.timeout = 30000; // Establece el tiempo de espera a 30 segundos
-    console.log("Servidor en puerto " + port);
+    console.log("Servidor en puerto " + process.env.port);
   });
